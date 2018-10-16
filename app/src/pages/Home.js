@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
+import colors from '../theme/index';
+
 const styles = StyleSheet.create({
     page: {
-      backgroundColor: "white",
+      backgroundColor: colors.background,
       flex: 1
     },
     welcomeContainer: {
@@ -12,7 +14,7 @@ const styles = StyleSheet.create({
       alignItems: "center"
     },
     welcomeTitle: {
-      color: "#49A698",
+      color: colors.primary,
       fontSize: 30
     },
     inputContainer: {
@@ -23,7 +25,7 @@ const styles = StyleSheet.create({
     },
     input: {
       height :40,
-      backgroundColor: "beige",
+      backgroundColor: colors.inputBackground,
       paddingHorizontal: 20,
       flex: 1,
       marginHorizontal: 10,
@@ -32,9 +34,9 @@ const styles = StyleSheet.create({
     button: {
       paddingHorizontal: 20,
       borderRadius:10,
-      backgroundColor: "#49A698",
+      backgroundColor: colors.primary,
       // IOS Shadow
-      shadowColor: "#49A698",
+      shadowColor: colors.primary,
       shadowOpacity: 1,
       shadowRadius: 5,
       // Android shadow
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
       marginHorizontal: 10
     },
     buttonText: {
-      color: "white",
+      color: colors.accent,
       textAlign: "center"
     },
     spacer: {
