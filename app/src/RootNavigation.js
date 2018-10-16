@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import Home from 'app/src/pages/Home';
+import { Home } from './pages'
 
 class App extends React.Component {
   render() {
